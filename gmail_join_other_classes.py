@@ -5,7 +5,6 @@ from selenium.webdriver.chrome.options import Options
 import time
 import os
 
-import sys
 from selenium.webdriver.common.action_chains import ActionChains
 # to type `stuff etc`, press entere etc
 from selenium.webdriver.common.keys import Keys
@@ -31,8 +30,6 @@ opt.add_experimental_option("prefs", {
     "profile.default_content_setting_values.notifications": 1
 })
 
-# PATH = "C:\\Users\\devi\\Desktop\\Rahul\\PythonCoding\\Learn\\Python\Selenium__\\msedgeself.driver_older.exe"
-
 # # Gives path to chrome WebDriverWait.driver and loads classroom webpage
 # driver = WebDriverWait.driver.Edge(PATH)
 # driver.get('https://accounts.google.com/ServiceLogin/identifier?service=classroom&passive=1209600&continue=https%3A%2F%2Fclassroom.google.com%2F&followup=https%3A%2F%2Fclassroom.google.com%2F&emr=1&flowName=GlifWebSignIn&flowEntry=AddSession')
@@ -42,7 +39,7 @@ class Main:
     def __init__(self):
         '''initializes varaibles and opens up the browser'''
 
-        self.PATH = "C:\\Users\\devi\Desktop\\Rahul\PythonCoding\\Learn\Python\Selenium__\\msedgedriver_older.exe"
+        self.PATH = "C:\\msedgedriver_older.exe"
 
         self.driver = webdriver.Edge(self.PATH)
 

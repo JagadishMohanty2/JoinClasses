@@ -39,7 +39,7 @@ class Main:
 
         self.driver = webdriver.Edge(self.PATH)
 
-        # Gives path to chrome WebDriverWait.driver and loads classroom webpage
+        # Gives path to WebDriverWait.driver and loads classroom webpage
         self.driver.get('https://accounts.google.com/ServiceLogin/identifier?service=classroom&passive=1209600&continue=https%3A%2F%2Fclassroom.google.com%2F&followup=https%3A%2F%2Fclassroom.google.com%2F&emr=1&flowName=GlifWebSignIn&flowEntry=AddSession')
 
     def log_into_gmail(self):

@@ -31,15 +31,22 @@ opt.add_experimental_option("prefs", {
     "profile.default_content_setting_values.notifications": 1
 })
 
+# PATH = "C:\\Users\\devi\\Desktop\\Rahul\\PythonCoding\\Learn\\Python\Selenium__\\msedgeself.driver_older.exe"
+
+# # Gives path to chrome WebDriverWait.driver and loads classroom webpage
+# driver = WebDriverWait.driver.Edge(PATH)
+# driver.get('https://accounts.google.com/ServiceLogin/identifier?service=classroom&passive=1209600&continue=https%3A%2F%2Fclassroom.google.com%2F&followup=https%3A%2F%2Fclassroom.google.com%2F&emr=1&flowName=GlifWebSignIn&flowEntry=AddSession')
+
+
 class Main:
     def __init__(self):
         '''initializes varaibles and opens up the browser'''
 
-        self.PATH = "C:\\msedgedriver_older.exe"
+        self.PATH = "C:\\Users\\devi\Desktop\\Rahul\PythonCoding\\Learn\Python\Selenium__\\msedgedriver_older.exe"
 
         self.driver = webdriver.Edge(self.PATH)
 
-        # Gives path to WebDriverWait.driver and loads classroom webpage
+        # Gives path to chrome WebDriverWait.driver and loads classroom webpage
         self.driver.get('https://accounts.google.com/ServiceLogin/identifier?service=classroom&passive=1209600&continue=https%3A%2F%2Fclassroom.google.com%2F&followup=https%3A%2F%2Fclassroom.google.com%2F&emr=1&flowName=GlifWebSignIn&flowEntry=AddSession')
 
     def log_into_gmail(self):
@@ -265,18 +272,26 @@ class Main:
         return self.join_meet_switch_tabs()
 
     def join_Acc(self):
+        '''joins my Accoutning class'''
+
         time.sleep(45*60)
         return
 
     def join_Math(self):
+        '''joins my Math class'''
+
         time.sleep(45*60)
         return
 
     def join_Physics(self):
+        '''joins my Physics class'''
+
         time.sleep(45*60)
         return
 
     def join_Spanish(self):
+        '''joins my Spanish class'''
+
         time.sleep(45*60)
         return
 

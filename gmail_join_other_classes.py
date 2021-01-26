@@ -47,8 +47,9 @@ class Main:
         '''initializes variables and opens up the browser'''
         logger.info("Opening up browser")
 
-        self.PATH = "C:\\Users\\devi\Desktop\\Rahul\PythonCoding\\Learn\Python\Selenium__\\msedgedriver_older.exe"
-
+        self.PATH = "Path to drive"
+        
+                # Put the name of your prefered browser
         self.driver = webdriver.Edge(self.PATH)
 
         # Gives path to chrome WebDriverWait.driver and loads classroom webpage
